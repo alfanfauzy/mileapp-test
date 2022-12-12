@@ -1,0 +1,34 @@
+{
+	"markerpoints": [
+		{
+			"id": 1,
+			"name": "Mal Taman Anggrek",
+			"detail": "Jl. Tj. Duren Timur 2 No.12, Tj. Duren Sel., Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11470",
+			"coordinates": [-6.1782174, 106.792228]
+		},
+		{
+			"id": 2,
+			"name": "Taman Kota Cattelya",
+			"detail": "Letjen S. Parman St, RT.15/RW.1, Kemanggisan, Palmerah, West Jakarta City, Jakarta 11480",
+			"coordinates": [-6.1818944, 106.7942964]
+		},
+		{
+			"id": 3,
+			"name": "Neo Soho Mall",
+			"detail": "Letjen S. Parman St No.Kav. 28, RT.3/RW.5, South Tanjung Duren, Grogol petamburan, West Jakarta City, Jakarta 11470",
+			"coordinates": [-6.1746773, 106.7899168]
+		},
+		{
+			"id": 4,
+			"name": "Central Park",
+			"detail": "Letjen S. Parman St No.kav.28, South Tanjung Duren, Grogol petamburan, West Jakarta City, Jakarta 11470",
+			"coordinates": [-6.1773713, 106.7904818]
+		},
+		{
+			"id": 5,
+			"name": "Pisang Goreng Bu Nanik(Andelan warga Jakarta Barat)",
+			"detail": "Jl. Tanjung Duren Raya No.67, RT.2/RW.5, Tj. Duren Sel., Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11470",
+			"coordinates": [-6.1746836, 106.7837201]
+		}
+	]
+}
