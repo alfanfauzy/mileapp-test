@@ -32,4 +32,22 @@ const WrapperLoginImage = styled.div`
 	width: 50%;
 `;
 
-export { Wrapper, Container, WrapperLogin, ImageLogo, WrapperLoginImage };
+const LinkExam = styled.div`
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	'a': {
+		text-decoration: none;
+	}
+`;
+
+export {
+	Wrapper,
+	Container,
+	WrapperLogin,
+	ImageLogo,
+	WrapperLoginImage,
+	LinkExam,
+};

@@ -7,11 +7,13 @@ import {
 	Container,
 	ImageLogo,
 	WrapperLoginImage,
+	LinkExam,
 } from './styled';
 import imageLogo from '../../assets/images/mile-app.png';
 import imageBackground from '../../assets/images/background.png';
 import Footer from '../../components/layouts/Footer';
 import LoginForm from '../../components/molecules/LoginForm';
+import { AiFillCaretRight } from 'react-icons/ai';
 
 function LoginPage() {
 	const navigate = useNavigate();
@@ -65,6 +67,10 @@ function LoginPage() {
 						onSubmit={handleSubmit}
 						onChange={handleChange}
 					/>
+					<LinkExam>
+						<a href="/exam">Go To Test Frontend MileApp</a>
+						<AiFillCaretRight />
+					</LinkExam>
 				</WrapperLogin>
 				<WrapperLoginImage>
 					<img src={imageBackground} alt={imageBackground} />

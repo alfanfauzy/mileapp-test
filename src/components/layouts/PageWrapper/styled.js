@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `;
 
 const WrapperHeader = styled.div`
-	padding: 10px 50px;
+	padding: 0 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

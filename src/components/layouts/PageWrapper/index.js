@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineLogout } from 'react-icons/ai';
+import { AiOutlineLogout, AiFillCaretLeft } from 'react-icons/ai';
 import Footer from '../Footer';
 import { Button, Wrapper, WrapperHeader } from './styled';
 
@@ -9,19 +9,27 @@ import { Button, Wrapper, WrapperHeader } from './styled';
  * chidlren: React.ReactNode,
  * title: string,
  * handlClick: function
+ * withLogout: boolean
  * }} props
  * @returns
  */
 const PageWrapper = (props) => {
-	const { children, title, handleClick } = props;
+	const { children, title, handleClick, withLogout } = props;
 	return (
 		<Wrapper>
 			<WrapperHeader>
 				<h2>{title}</h2>
-				<Button onClick={handleClick}>
-					<AiOutlineLogout />
-					Logout
-				</Button>
+				{withLogout ? (
+					<Button onClick={handleClick}>
+						<AiOutlineLogout />
+						Logout
+					</Button>
+				) : (
+					<Button onClick={handleClick}>
+						<AiFillCaretLeft />
+						Back
+					</Button>
+				)}
 			</WrapperHeader>
 			{children}
 			<Footer />

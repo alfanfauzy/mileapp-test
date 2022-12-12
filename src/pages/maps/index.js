@@ -25,7 +25,7 @@ const UserPage = () => {
 	}, []);
 
 	return (
-		<PageWrapper title={'Map'} handleClick={handleLogout}>
+		<PageWrapper title={'Map'} handleClick={handleLogout} withLogout>
 			<div style={{ minHeight: '650px' }}>
 				<Map />
 			</div>

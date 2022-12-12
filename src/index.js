@@ -6,7 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import LoginPage from './pages/authentication/Login';
-import UserPage from './pages/user';
+import UserPage from './pages/maps';
+import ExamPage from './pages/exam';
 
 const componentRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(componentRoot);
@@ -16,6 +17,7 @@ root.render(
 			<Routes>
 				<Route path="/" index element={<LoginPage />} />
 				<Route path="/user" element={<UserPage />} />
+				<Route path="/exam" element={<ExamPage />} />
 			</Routes>
 			<ToastContainer
 				position="top-center"
