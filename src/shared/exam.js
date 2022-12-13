@@ -80,9 +80,33 @@ const convertArray = () => {
 		'1.4.3.',
 	];
 
-	const object_code = {};
+	const object = array_code.reduce((obj, code) => {
+		const parts = code.split('.'); // Split the code into its individual parts
+		let current = obj; // Start at the root of the object
 
-	console.log(object_code);
+		// Iterate over the parts of the code
+		for (let i = 0; i < parts.length; i++) {
+			if (parts[i] !== '') {
+				const part = parts[i];
+				const key = parts[i].toString();
+
+				// If the current part doesn't exist in the object, add it
+				if (!current[part]) {
+					// if (part > 2) {
+					current[part] = { code };
+					// } else {
+					// 	current[part] = { [key]: code };
+					// }
+				}
+				// Move down to the next level in the object
+				current = current[part];
+			}
+		}
+
+		return obj;
+	}, {});
+
+	console.log(object);
 };
 
 export { swabVariable, findMissingNumber, findNumberMoreCalled, convertArray };

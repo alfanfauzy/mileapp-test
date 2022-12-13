@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import {
 	convertArray,
 	findMissingNumber,
@@ -88,7 +89,7 @@ const ExamMoluceles = () => {
 				<TitleCode>1. Swap Values</TitleCode>
 				<QuestionCode>
 					<p>See result in console.log</p>
-					<button onClick={swabVariable}>Swab Variable</button>
+					<Button onClick={swabVariable}>Swab Variable</Button>
 				</QuestionCode>
 			</WrapperCodeExam>
 			<WrapperCodeExam>
@@ -98,9 +99,9 @@ const ExamMoluceles = () => {
 						The missing number is:{' '}
 						{missingNumber && missingNumber.join(', ')}
 					</p>
-					<button onClick={handleFindMissingNumber}>
+					<Button onClick={handleFindMissingNumber}>
 						Find Missing Number
-					</button>
+					</Button>
 				</QuestionCode>
 			</WrapperCodeExam>
 			<WrapperCodeExam>
@@ -111,21 +112,37 @@ const ExamMoluceles = () => {
 					<p>
 						The more called number is: {numberMoreCalled.join(', ')}
 					</p>
-					<button onClick={handleFindNumberMoreCalled}>
+					<Button onClick={handleFindNumberMoreCalled}>
 						Find More Called Number
-					</button>
+					</Button>
 				</QuestionCode>
 			</WrapperCodeExam>
 			<WrapperCodeExam>
 				<TitleCode>4. Change array to object</TitleCode>
 				<QuestionCode>
-					<button onClick={convertArray}>
+					<p>See result in console.log</p>
+					<Button onClick={convertArray}>
 						Convert Array to Object
-					</button>
+					</Button>
 				</QuestionCode>
 			</WrapperCodeExam>
 		</WrapperExam>
 	);
 };
+
+const Button = styled.button`
+	background-color: #02a8f3;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	border: none;
+	font-size: 14px;
+	box-shadow: 4px 5px 0px 1px rgba(255, 171, 73, 0.75);
+	cursor: pointer;
+	border: 1px solid #ffa616;
+	&:hover {
+		background-color: #f9651f;
+	}
+`;
 
 export default ExamMoluceles;
