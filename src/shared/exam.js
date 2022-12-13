@@ -92,12 +92,9 @@ const convertArray = () => {
 
 				// If the current part doesn't exist in the object, add it
 				if (!current[part]) {
-					// if (part > 2) {
 					current[part] = { code };
-					// } else {
-					// 	current[part] = { [key]: code };
-					// }
 				}
+
 				// Move down to the next level in the object
 				current = current[part];
 			}
